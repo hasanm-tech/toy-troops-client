@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
+import { AuthContext } from '../../Provider/AuthProvider';
+ 
 const Register = () => {
+
+    const {createUser} = useContext(AuthContext)
 
     const handleRegister = e => {
         e.preventDefault()
@@ -11,6 +14,12 @@ const Register = () => {
         const pass = form.pass.value; 
         const photo = form.photo.value; 
         console.log(name,email,pass,photo)
+        createUser(email,pass)
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+        })
+        .catch(error => console.log(error))
     }
      return (
         <section>
@@ -24,14 +33,14 @@ const Register = () => {
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name='name' placeholder="email" className="input input-bordered" />
+                        <input type="text" name='name' placeholder="enter your email" className="input input-bordered" />
                         </div>
 
                         <div className='form-control'>                            
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="text" name='email' placeholder="email" className="input input-bordered" />
+                        <input type="text" name='email' placeholder="enter your email" className="input input-bordered" />
                         </div>
 
 
@@ -39,7 +48,7 @@ const Register = () => {
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="text" name='pass' placeholder="password" className="input input-bordered" />
+                        <input type="password" name='pass' placeholder="enter your password" className="input input-bordered" />
                         </div>
 
 
@@ -47,7 +56,7 @@ const Register = () => {
                         <label className="label">
                             <span className="label-text">Photo Url</span>
                         </label>
-                        <input type="text" name='photo' placeholder="email" className="input input-bordered" />
+                        <input type="text" name='photo' placeholder="enter your photo url " className="input input-bordered" />
                         </div>
 
 

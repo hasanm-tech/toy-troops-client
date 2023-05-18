@@ -29,19 +29,19 @@ const Header = () => {
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-full"
             >
             <li className="bg-[#fff] w-[200px] p-2">
-                <a> <Link> Home </Link></a>
+                 <Link> Home </Link>
                 </li>
                 <li className="bg-[#fff] w-[200px] p-2">
-                    <a><Link>All Toys</Link></a>
+                    <Link>All Toys</Link>
                 </li >
                 <li className="bg-[#fff] w-[200px] p-2">
-                    <a><Link>My Toys</Link></a>
+                    <Link>My Toys</Link>
                 </li>
                 <li className="bg-[#fff] w-[200px] p-2">
-                    <a> <Link>Add A Toy</Link></a>
+                     <Link>Add A Toy</Link>
                 </li>
                 <li className="bg-[#fff] w-[200px] p-2">
-                    <a> <Link>BLogs</Link></a>
+                     <Link>BLogs</Link>
                 </li>
 
                 </ul>
@@ -57,19 +57,19 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
                 <li>
-                <a> <Link> Home </Link></a>
+                <Link> Home </Link>
                 </li>
                 <li>
-                    <a><Link>All Toys</Link></a>
+                <Link>All Toys</Link>
                 </li >
                 <li >
-                    <a><Link>My Toys</Link></a>
+                <Link>My Toys</Link>
                 </li>
                 <li >
-                    <a> <Link>Add  A Toy</Link></a>
+                 <Link>Add  A Toy</Link>
                 </li>
                 <li >
-                    <a> <Link>BLogs</Link></a>
+                    <Link>BLogs</Link>
                 </li>
             </ul>
         </div>
