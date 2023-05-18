@@ -1,0 +1,26 @@
+
+.btn-logo h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+a:active{
+    background-color: #7d93cd !important;
+}
+
+.footer{
+    background-image: url(../../../assets/footer.png);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 20px;
+
+}
+.footer h2 a {
+    color: rgba(23, 23, 23, 0.638) !important;
+}
+@media only screen and (max-width: 1024px) {
+    .btn-logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }    
+  }
