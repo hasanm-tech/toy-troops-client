@@ -7,7 +7,7 @@ a:active{
     background-color: #7d93cd !important;
 }
 
-.footer{
+.footer-bg{
     background-image: url(../../../assets/footer.png);
     background-position: center;
     background-size: cover;
