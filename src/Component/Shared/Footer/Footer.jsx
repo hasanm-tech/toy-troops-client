@@ -1,4 +1,6 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedinIn, } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -23,10 +25,11 @@ const Footer = () => {
             <a className="link link-hover  text-[#000000be]">Press kit</a>
         </div>
         <div>
-            <span className="footer-title  text-[#000000be]">Legal</span>
-            <a className="link link-hover  text-[#000000be]">Terms of use</a>
-            <a className="link link-hover  text-[#000000be]">Privacy policy</a>
-            <a className="link link-hover  text-[#000000be]">Cookie policy</a>
+            <span className="footer-title  text-[#000000be]">Social Links</span>
+            <a className="link link-hover  text-[#000000be]"><FaFacebook /></a>
+            <a className="link link-hover  text-[#000000be]"><FaLinkedinIn /></a>
+            <a className="link link-hover  text-[#000000be]"><FaInstagram /></a>
+            <a className="text-[#000000be]">Address : mirpur - Dhaka</a>
         </div>
 
         

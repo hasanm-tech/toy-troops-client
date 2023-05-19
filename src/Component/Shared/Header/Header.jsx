@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import './Header.css'
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Header = () => {
+
+    const {user,userLogOut} = useContext(AuthContext);
+    
+    console.log(user)
+
+    const handleLogOut = () => {
+        userLogOut()
+        .then(() => {
+
+        })
+        .catch(error => {
+            console.error(error)
+        })
+    }
+
+
   return (
     <section className=" bg-[#fff8f0]">
         <div className="navbar container mx-auto  py-4">
@@ -35,13 +52,13 @@ const Header = () => {
                     <Link>All Toys</Link>
                 </li >
                 <li className="bg-[#fff] w-[200px] p-2">
-                    <Link>My Toys</Link>
-                </li>
-                <li className="bg-[#fff] w-[200px] p-2">
-                     <Link>Add A Toy</Link>
-                </li>
-                <li className="bg-[#fff] w-[200px] p-2">
                      <Link>BLogs</Link>
+                </li>
+                <li >
+                {user? <Link>My Toys</Link> : ''}
+                </li>
+                <li >
+                {user? <Link>Add a Toy</Link> : ''}
                 </li>
 
                 </ul>
@@ -63,13 +80,13 @@ const Header = () => {
                 <Link>All Toys</Link>
                 </li >
                 <li >
-                <Link>My Toys</Link>
-                </li>
-                <li >
-                 <Link>Add  A Toy</Link>
-                </li>
-                <li >
                     <Link>BLogs</Link>
+                </li>
+                <li >
+                {user? <Link>My Toys</Link> : ''}
+                </li>
+                <li >
+                {user? <Link>Add a Toy</Link> : ''}
                 </li>
             </ul>
         </div>
@@ -77,9 +94,23 @@ const Header = () => {
 
 
         <div className="navbar-end mx-3">
-        <button className="btn btn-outline">
-            <Link to='login'>Log in</Link>
-            </button>
+        <ul>
+        <li>
+                {
+
+                    user ?
+                    <div className='user bg-transparent flex gap-4'> 
+
+                    <img className='btn-circle userImg' title={user.displayName} roundedCircle  src={user.photoURL?user.photoURL : ''} alt="" /> 
+
+                    <button className='user-btn'> <Link onClick={handleLogOut}> Logout </Link></button>
+
+                    </div> :
+                    <button className='user-btn font-bold'> <Link to='/login'>Login </Link> </button>
+
+                    } 
+         </li>
+        </ul>
         </div>
 
 

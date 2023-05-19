@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
  
 const Register = () => {
 
-    const {createUser} = useContext(AuthContext)
+    const {createUser,updateUserData} = useContext(AuthContext)
+    const [userError, setError] = useState(null)
 
     const handleRegister = e => {
         e.preventDefault()
@@ -13,13 +14,25 @@ const Register = () => {
         const email = form.email.value; 
         const pass = form.pass.value; 
         const photo = form.photo.value; 
+        form.reset()
         console.log(name,email,pass,photo)
         createUser(email,pass)
         .then(result => {
             const user = result.user;
             console.log(user)
+            updateUserData(result.user, name,photo)
         })
-        .catch(error => console.log(error))
+        .catch(error => console.error(error))
+
+        if(email == ''){
+            setError('provide a valid email')
+        } 
+        else if(pass == ''){
+            setError('provide a valid password ')
+        }
+        else if(pass.length < 6){
+            setError('password length should be at least 6')
+        }
     }
      return (
         <section>
@@ -66,7 +79,8 @@ const Register = () => {
                         </div>
 
                         <p className='py-4'>Already registers go to <button className='btn btn-xs'><Link to='/login'>Login</Link></button></p>
-                        
+                        <br />
+                        <p className='font-bold text-[#ab3636]'>{userError}</p>
                     </div>
                     </form>
                     </div>

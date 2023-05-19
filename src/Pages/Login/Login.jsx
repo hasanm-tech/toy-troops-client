@@ -1,10 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Login = () => {
 
-    const {userSignIn} = useContext(AuthContext)
+    const [error, setError] = useState(null)
+    const [success, setSuccess] = useState(null)
+
+    const {userSignIn,googleSignIn} = useContext(AuthContext)
+    
     const handleLogin = e => {
         e.preventDefault()
         const form = e.target;
@@ -17,11 +21,31 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             console.log(user)
+            setSuccess('user login successful')
+            setError('')
         })
         .catch(error => {
             console.log(error)
+            setError(error.message)
         })
     }
+
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+            setSuccess('user login successful')
+            setError('')
+        })
+        .catch(error => {
+            console.log(error)
+            setError(error.message)
+        })
+    } 
+
+
     return (
         <section>
             <div className="hero min-h-screen bg-base-200">
@@ -46,7 +70,16 @@ const Login = () => {
                         </div>
 
                         <p className='py-4'>New user go to <button className='btn btn-xs'><Link to='/register'>Register</Link></button></p>
+
+                        <div className='mb-10 text-center'>
+                        <button onClick={handleGoogleSignIn} className='p-4 btn btn-outline text-white bg-[#db3c3c]'>Google Sign In</button>
+                        </div>
+
+                        <p className='font-bold text-[#ab3636]'>{error}</p>
+                        <p className='font-bold text-[#56a35a]'>{success}</p>
                     </div>
+
+                    
                     </form>
                     </div>
                 </div>
