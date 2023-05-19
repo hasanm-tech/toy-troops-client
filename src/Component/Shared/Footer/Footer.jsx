@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <section className=" bg-[#fff] footer-bg">
         <footer className="footer p-10 container mx-auto  text-neutral-content" >
-            <div className="items-center grid-flow-col">
-            <h2 className="lg:text-2xl text-lg font-bold text-[#000000be]">Toy <span className="text-[#7d93cd]">Troops</span></h2>
+            <div className="items-center grid-flow-col pt-10">
+            <h2 className="lg:text-2xl text-lg font-bold text-[#000000be]">Toy <span className="text-[#f6a344]">Troops</span></h2>
             
         </div>
         <div>
@@ -34,7 +34,7 @@ const Footer = () => {
 
         
         </footer>
-        <div className="bg-[#7d93cd] py-4 text-center">
+        <div className="bg-[#7d93cd] py-2 text-center">
             <p>Copyright © 2023 - All right reserved</p>
         </div>
 

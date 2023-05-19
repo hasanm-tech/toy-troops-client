@@ -1,0 +1,8 @@
+.heroB{
+    background-image: url(../../../assets/hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-color: #afbc9ebf;
+}

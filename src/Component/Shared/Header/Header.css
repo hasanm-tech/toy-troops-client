@@ -10,7 +10,8 @@ a:active{
 .footer-bg{
     background-image: url(../../../assets/footer.png);
     background-position: center;
-    background-size: cover;
+    background-size: inherit;
+    background-repeat: no-repeat;
     padding: 120px 20px;
 
 }

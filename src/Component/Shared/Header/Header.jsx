@@ -21,7 +21,7 @@ const Header = () => {
 
 
   return (
-    <section className=" bg-[#fff8f0]">
+    <section className=" bg-[#fefffd]">
         <div className="navbar container mx-auto  py-4">
         <div className="navbar-start">
             <div className="dropdown">
@@ -65,7 +65,7 @@ const Header = () => {
             </div>
 
             <a className="btn-logo">
-                <h2 className="lg:text-2xl text-lg font-bold">Toy <span className="text-[#7d93cd]">Troops</span></h2>
+                <h2 className="lg:text-2xl text-lg font-bold">Toy <span className="text-[#f6a344]">Troops</span></h2>
             </a>
         </div>
 
