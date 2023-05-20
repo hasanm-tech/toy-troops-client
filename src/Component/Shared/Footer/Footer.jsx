@@ -4,10 +4,11 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className=" bg-[#fff] footer-bg">
-        <footer className="footer p-10 container mx-auto  text-neutral-content" >
-            <div className="items-center grid-flow-col pt-10">
+    <section className=" bg-[#e2e9ff91] footer-bg">
+        <footer className="footer pt-20 p-5 container mx-auto grid md:grid-cols-4 grid-cols-2  text-neutral-content gap-4" >
+            <div className="items-center col-span-2">
             <h2 className="lg:text-2xl text-lg font-bold text-[#000000be]">Toy <span className="text-[#f6a344]">Troops</span></h2>
+            <p className="text-lg text-[#000000be] py-5">Shop with confidence knowing that we offer hassle-free returns and a satisfaction guarantee on all our action toys.</p>
             
         </div>
         <div>

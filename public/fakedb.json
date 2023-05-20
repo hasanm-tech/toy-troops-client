@@ -1,0 +1,85 @@
+
+[{
+    "picture": "https://cdn.trendhunterstatic.com/thumbs/transformers-toys.jpeg?auto=webp",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "transformers"
+  },
+  {
+    "picture": "https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F0482_PROD_TRA_GEN_Selects_Deluxe_Deepcover_0151_Online_300DPI_900x900.jpg?v=1612279184",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "transformers"
+  },
+  {
+    "picture": "https://news.tfw2005.com/wp-content/uploads/sites/10/2023/05/Transformers-x-G.I.-Joe-001.jpg",
+    "name": "Lightning Fury",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "transformers"
+  },
+  {
+    "picture": "https://img.freepik.com/free-vector/super-boy-standing-white-background_1308-98248.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Ninja Assassin",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "marvel"
+  },
+  {
+    "picture": "https://img.freepik.com/free-vector/little-boy-superhero-costume_1308-103594.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Battle Commander",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "marvel"
+  },
+  {
+    "picture": "https://img.freepik.com/free-photo/fun-superhero-3d-illustration_183364-81249.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Savage Beast",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "marvel"
+  },
+  {
+    "picture": "https://img.freepik.com/free-vector/little-boy-superhero-costume_1308-88289.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Thunder Punch",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "marvel"
+  },
+  {
+    "picture": "https://img.freepik.com/free-vector/boy-wearing-superhero-with-stranglehold-standing-position-cartoon-character-portrait-isolated_1308-47792.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Stealth Warrior",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "Star Wars"
+  },
+  {
+    "picture": "https://img.freepik.com/free-vector/happy-boy-playing-hero_1308-3348.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Firestorm Rex",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "Star Wars"
+  },
+  {
+    "picture": "https://img.freepik.com/free-photo/superheroe-posing_1048-1705.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Galactic Guardian",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "Star Wars"
+  },
+  {
+    "picture": "https://img.freepik.com/free-photo/fun-gaulois-3d-illustration_183364-80856.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Shadow Stalker",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "Star Wars"
+  },
+  {
+    "picture": "https://img.freepik.com/free-vector/robot-evolution-man-metal-exoskeleton-artificial-intelligence-technological-progress-cartoon-vector-blue-color-robots-development_107791-4231.jpg?size=626&ext=jpg&ga=GA1.1.851868874.1681142710&semt=ais",
+    "name": "Mega Mech",
+    "price": 29.99,
+    "rating": 4.5,
+    "category" : "Star Wars"
+  }
+  
+  ]
