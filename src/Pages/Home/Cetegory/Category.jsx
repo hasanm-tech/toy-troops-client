@@ -30,7 +30,7 @@ const Category = () => {
     return (
         <div className='container mx-auto'>
             <div className='py-10'>
-            <h2 className='text-2xl font-bold text-center'> Shop by category </h2>
+            <h2 className='text-4xl font-bold text-center'> Shop by category </h2>
             </div>
 
             <div className='flex gap-6 justify-center'> 

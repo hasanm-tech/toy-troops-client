@@ -1,0 +1,13 @@
+.dis{
+    background-image: url(../../../assets/25196.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    background-position: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    .dis{
+        background-position: center;
+    }
+}

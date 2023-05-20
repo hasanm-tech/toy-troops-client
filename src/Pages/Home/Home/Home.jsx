@@ -1,8 +1,10 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Gallery from '../Gallary/Gallary';
-import Categoy from '../Cetegory/Category';
 import Category from '../Cetegory/Category';
+import Brand from '../Brand/Brand';
+import Services from '../Services/Services';
+import Discount from '../Discount/Discount';
 
 const Home = () => {
     return (
@@ -10,6 +12,9 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <Category></Category>
+            <Brand></Brand>
+            <Discount></Discount>
+            <Services></Services>
         </>
     );
 };

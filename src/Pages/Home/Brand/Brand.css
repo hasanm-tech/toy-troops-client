@@ -1,0 +1,6 @@
+.brand-logo img{
+    filter: opacity(0.5);
+}
+.brand-logo img:hover{
+    filter: opacity(1);
+}
