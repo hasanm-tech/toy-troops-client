@@ -49,13 +49,13 @@ const Header = () => {
                  <Link> Home </Link>
                 </li>
                 <li className="bg-[#fff] w-[200px] p-2">
-                    <Link>All Toys</Link>
+                    <Link to='/all-toys'>All Toys</Link>
                 </li >
                 <li className="bg-[#fff] w-[200px] p-2">
-                     <Link>BLogs</Link>
+                     <Link  to='/blog'>BLogs</Link>
                 </li>
                 <li >
-                {user? <Link>My Toys</Link> : ''}
+                {user? <Link >My Toys</Link> : ''}
                 </li>
                 <li >
                 {user? <Link to='/add-toy'>Add a Toy</Link> : ''}
@@ -77,10 +77,10 @@ const Header = () => {
                 <Link> Home </Link>
                 </li>
                 <li>
-                <Link>All Toys</Link>
+                <Link to='/all-toys'>All Toys</Link>
                 </li >
                 <li >
-                    <Link>BLogs</Link>
+                    <Link to='/blog'>BLogs</Link>
                 </li>
                 <li >
                 {user? <Link>My Toys</Link> : ''}
