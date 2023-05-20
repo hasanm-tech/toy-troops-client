@@ -58,7 +58,7 @@ const Header = () => {
                 {user? <Link>My Toys</Link> : ''}
                 </li>
                 <li >
-                {user? <Link>Add a Toy</Link> : ''}
+                {user? <Link to='/add-toy'>Add a Toy</Link> : ''}
                 </li>
 
                 </ul>
@@ -86,7 +86,7 @@ const Header = () => {
                 {user? <Link>My Toys</Link> : ''}
                 </li>
                 <li >
-                {user? <Link>Add a Toy</Link> : ''}
+                {user? <Link to='/add-toy'>Add a Toy</Link> : ''}
                 </li>
             </ul>
         </div>

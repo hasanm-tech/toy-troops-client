@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
  
 const Register = () => {
-
     const {createUser,updateUserData} = useContext(AuthContext)
     const [userError, setError] = useState(null)
 
