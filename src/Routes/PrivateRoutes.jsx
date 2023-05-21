@@ -18,7 +18,7 @@ const PrivateRoutes = ({children}) => {
     } else{
         Swal.fire(
             '',
-            'You have to log in first to view details !',
+            'You have to log in first to view details !! ',
             'warning'
           )
     }
