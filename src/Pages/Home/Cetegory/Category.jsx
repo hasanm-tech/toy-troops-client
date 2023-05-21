@@ -11,7 +11,7 @@ const Category = () => {
 
     AOS.init()
     useEffect(() => {
-        fetch('http://localhost:5000/toys')
+        fetch('https://y-ten-neon.vercel.app/toys')
             .then(res => res.json())
             .then(data => {
                 setToys(data);

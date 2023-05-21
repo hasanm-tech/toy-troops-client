@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         {
           path: 'single-toy/:id',
           element:<PrivateRoutes><SingleToy></SingleToy></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
+          loader: ({params}) => fetch(`https://y-ten-neon.vercel.app/toys/${params.id}`)
         },
         {
           path:'add-toy',
@@ -47,12 +47,12 @@ const router = createBrowserRouter([
         {
           path:'all-toys',
           element: <AllToys></AllToys>,
-          loader: () => fetch('http://localhost:5000/bookings')
+          loader: () => fetch('https://y-ten-neon.vercel.app/bookings')
         },
         {
           path: 'all-toys/:id',
           element:<PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
+          loader: ({params}) => fetch(`https://y-ten-neon.vercel.app/bookings/${params.id}`)
         },
         {
           path: 'my-toys',
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
         {
           path: 'updateToy/:id',
           element: <PrivateRoutes><UpdateToy></UpdateToy></PrivateRoutes>,
-          loader: ({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
+          loader: ({params}) => fetch(`https://y-ten-neon.vercel.app/bookings/${params.id}`)
 
         }
       ]

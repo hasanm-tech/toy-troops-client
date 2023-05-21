@@ -25,7 +25,7 @@ const AddToys = () => {
             const booking = {name,toyName,photo,sellerEmail,sellerName,subCategory,price,quantity,rating,detail}
             console.log(booking)
 
-            fetch('http://localhost:5000/bookings', {
+            fetch('https://y-ten-neon.vercel.app/bookings', {
                 method: 'POST',
                 headers: {
                     'content-type' : 'application/json'

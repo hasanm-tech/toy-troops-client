@@ -10,7 +10,7 @@ const MyToy = () => {
     useTitle('MY TOY')
 
     const {user} = useContext(AuthContext)
-    const url = `http://localhost:5000/myToys?sellerEmail=${user?.email}`
+    const url = `https://y-ten-neon.vercel.app/myToys?sellerEmail=${user?.email}`
 
     console.log(user.email)
     
@@ -33,7 +33,7 @@ const MyToy = () => {
         const proceed = confirm('want to delete !! are you sure ??')
 
         if(proceed){
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://y-ten-neon.vercel.app/bookings/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
