@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import 'react-tabs/style/react-tabs.css';
 import Cat_Toys from './Cat_Toys';
 import '../Cetegory/Category.css';
@@ -7,6 +9,7 @@ const Category = () => {
     const [toys, setToys] = useState([]);
     const [catToy, setCatToy] = useState([]);
 
+    AOS.init()
     useEffect(() => {
         fetch('http://localhost:5000/toys')
             .then(res => res.json())
@@ -22,7 +25,7 @@ const Category = () => {
     };
 
     return (
-        <div className='container mx-auto'>
+        <div data-aos="fade-down" data-aos-duration="5000" className='container mx-auto'>
             <div className='py-10'>
                 <h2 className='text-4xl font-bold text-center'> Shop by category </h2>
             </div>

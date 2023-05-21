@@ -6,7 +6,7 @@ import p4 from '../../../assets/p4.avif'
 
 const Services = () => {
     return (
-        <section className='bg-[#e2e9ff91]'>
+        <section data-aos="fade-in" data-aos-duration="5000" className='bg-[#e2e9ff91]'>
             <div className='container mx-auto py-20 grid md:grid-cols-4 grid-cols-2 gap-10 justify-items-center justify-center text-center'>
                 <div className='text-center'>
                     <img className='m-auto'  src={p1} alt="" />

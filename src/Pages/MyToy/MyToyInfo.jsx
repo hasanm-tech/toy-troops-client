@@ -60,7 +60,7 @@ const MyToyInfo = ({myToy,handleDelete}) => {
 
 
         <td className='space-x-10'>
-            <button><FaRegEdit /></button>
+            <Link to={`/updateToy/${_id}`}><button><FaRegEdit /></button></Link>
             <button onClick={() => handleDelete(_id)}><FaRegTrashAlt /></button>
             <button> <Link to={`/all-toys/${_id}`}> View Details </Link></button>
             

@@ -5,7 +5,7 @@ const Cat_Toys = ({t}) => {
 
     const {_id,name,picture,price,rating} = t;
     return (
-            <div className='space-y-7 border p-5 text-center' >
+            <div  data-aos="flip-left" data-aos-duration="5000" className='space-y-7 border p-5 text-center' >
                 <img src={picture} alt="" />
                 <h2 className='text-2xl font-bold'> Name : {name}</h2>
                 <div className='flex justify-around'>

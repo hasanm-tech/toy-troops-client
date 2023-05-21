@@ -1,11 +1,15 @@
 import React from 'react';
 import '../Discount/Discount.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Discount = () => {
+
+    AOS.init()
     return (
         <section className='dis'>
             <div className='container mx-auto'>
-                <div className='text-center lg:w-1/3 md:1/2 w-full mr-auto md:bg-[#c0c0c084] bg-[#767676b3] p-10 space-y-5'>
+                <div data-aos="zoom-in-left" className='text-center lg:w-1/3 md:1/2 w-full mr-auto md:bg-[#c0c0c084] bg-[#767676b3] p-10 space-y-5'>
                     <h2 className='text-4xl font-bold'>BE IN TIME FOR <br />
                         <span className='text-white font-extrabold'>HUGE PROMO</span> <br />
                         IN OUR STORES!</h2> 
