@@ -3,10 +3,11 @@ import { AuthContext } from '../../Provider/AuthProvider';
 import MyToyInfo from './MyToyInfo';
 import '../MyToy/MyToy.css'
 import Swal from 'sweetalert2';
+import useTitle from '../../Hooks/useTitle';
 
 const MyToy = () => {
 
-
+    useTitle('MY TOY')
 
     const {user} = useContext(AuthContext)
     const url = `http://localhost:5000/myToys?sellerEmail=${user?.email}`

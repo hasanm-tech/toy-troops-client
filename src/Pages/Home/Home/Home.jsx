@@ -5,8 +5,11 @@ import Category from '../Cetegory/Category';
 import Brand from '../Brand/Brand';
 import Services from '../Services/Services';
 import Discount from '../Discount/Discount';
+import useTitle from '../../../Hooks/useTitle';
 
 const Home = () => {
+
+    useTitle('Home')
     return (
         <>
             <Banner></Banner>

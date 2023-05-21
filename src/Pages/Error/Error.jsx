@@ -1,8 +1,10 @@
 import React from 'react';
 import error from '../../assets/error.jpg'
 import { Link } from 'react-router-dom';
+import useTitle from '../../Hooks/useTitle';
 
 const Error = () => {
+    useTitle("Error")
     return (
         <div className='h-[100vh] flex justify-center items-center flex-col'>
             <img className='w-[400px] h-[400px] object-cover'  src={error} alt="" />
