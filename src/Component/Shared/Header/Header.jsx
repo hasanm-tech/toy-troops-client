@@ -55,7 +55,7 @@ const Header = () => {
                      <Link  to='/blog'>BLogs</Link>
                 </li>
                 <li >
-                {user? <Link >My Toys</Link> : ''}
+                {user?.email? <Link to='/my-toys'>My Toys</Link> : ''}
                 </li>
                 <li >
                 {user? <Link to='/add-toy'>Add a Toy</Link> : ''}
@@ -83,7 +83,7 @@ const Header = () => {
                     <Link to='/blog'>BLogs</Link>
                 </li>
                 <li >
-                {user? <Link>My Toys</Link> : ''}
+                {user?.email? <Link to='/my-toys'>My Toys</Link> : ''}
                 </li>
                 <li >
                 {user? <Link to='/add-toy'>Add a Toy</Link> : ''}
