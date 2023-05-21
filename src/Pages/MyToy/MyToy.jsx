@@ -2,12 +2,14 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import MyToyInfo from './MyToyInfo';
 import '../MyToy/MyToy.css'
+import Swal from 'sweetalert2';
 
 const MyToy = () => {
 
     const {user} = useContext(AuthContext)
-    const url = `http://localhost:5000/bookings?email=${user?.email}`
+    const url = `http://localhost:5000/bookings?sellerEmail=${user?.email}`
 
+    console.log(user.email)
     
     const [myToys, setMyToys] = useState([])
     
@@ -20,6 +22,30 @@ const MyToy = () => {
     })
 
     },[])
+
+
+    const handleDelete = id => {
+        const proceed = confirm('want to delete !! are you sure ??')
+
+        if(proceed){
+            fetch(`http://localhost:5000/bookings/${id}`, {
+                method: 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                if(data.deletedCount > 0){
+                    Swal.fire(
+                        '',
+                        'Your toy deleted!',
+                        'success'
+                      )
+
+                      const remaining = myToys.filter(toy => toy._id !== id);
+                      setMyToys(remaining)
+                }
+            })
+        }
+    }
 
 
 
@@ -47,7 +73,7 @@ const MyToy = () => {
         <tbody>
           {/* row  */}
           {
-            myToys.map(myToy => <MyToyInfo key={myToy._id} myToy={myToy}></MyToyInfo>)
+            myToys.map(myToy => <MyToyInfo key={myToy._id} handleDelete={handleDelete} myToy={myToy}></MyToyInfo>)
           }
         </tbody>
         {/* foot */}

@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { FaRegTrashAlt, FaRegEdit } from 'react-icons/fa';
 import '../MyToy/MyToy.css'
 
-const MyToyInfo = ({myToy}) => {
+const MyToyInfo = ({myToy,handleDelete}) => {
 
     const {_id,sellerName,sellerEmail,price,quantity,subCategory,photo,toyName} = myToy;
+
+    
 
     return (
         <tr>
@@ -59,7 +61,7 @@ const MyToyInfo = ({myToy}) => {
 
         <td className='space-x-10'>
             <button><FaRegEdit /></button>
-            <button><FaRegTrashAlt /></button>
+            <button onClick={() => handleDelete(_id)}><FaRegTrashAlt /></button>
             <button> <Link to={`/all-toys/${_id}`}> View Details </Link></button>
             
         </td>
